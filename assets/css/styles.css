@@ -1,0 +1,119 @@
+/* Menú Usuario */
+
+#user_menu{
+    float: right;
+    padding: 10px 0;
+    max-width: 300px; 
+    margin-left: 10px;
+}
+
+#menu{
+    padding: 1px;
+    display: flex;
+}
+
+#menu .img{
+    width: 25px;
+    height: 25px;
+}
+
+#menu .img img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.user{
+    width: auto;
+}
+
+#menu-items{
+    width:0;
+    height:0;
+    position: relative;
+    z-index: -1000;
+    transform: translateY(-50px) !important;
+    opacity: 0 !important;
+	transition: transform 200ms, opacity 200ms;
+}
+
+#user_menu:hover > #menu-items, #user_menu:focus > #menu-items{
+    display: block !important;
+    z-index: 1;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: transform 200ms, opacity 200ms;
+}
+
+#menu-items:hover, #menu-items:focus{
+    display: block !important;
+    z-index: 1;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: transform 200ms, opacity 200ms;
+}
+
+#access{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+@media (max-width: 1000px){
+	.custom-logo{
+		position: relative;
+		left: 300%;
+		max-height: 100px !important;
+		max-width: 180px !important;
+		width: auto;
+        height: auto;
+	}
+	.logo{
+		width: auto;
+	}
+}
+
+.woocommerce-cart .woocommerce-message{
+	font-weight: bold;
+	font-size: 17px;
+}
+
+a.page-numbers{
+	background-color: #92C428 !important;
+}
+
+.pagination li:hover{
+	text-shadow: 2px 2px white !important;
+}
+
+@media (max-width: 380px){
+	.custom-logo{
+		left: 20%;
+	}
+	
+	.logo{
+		width: auto;
+	}
+}
+
+@media (max-width: 876px){
+	#topbar{
+		display: block;
+	}
+	
+	#menu-items:hover{
+		transform: translateY(20px) !important;
+}
+	}
+
+#user_menu:hover > #menu-items, #user_menu:focus > #menu-items{
+    transform: translate(-35px,0px) !important;
+
+}
+
+#menu-items{
+	transform: translate(-35px,-0px) !important;
+}
+
+.site-title{
+	font-family: "CotrailOne-Regular", Arial, sans-serif !important;
+}
